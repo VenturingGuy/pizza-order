@@ -55,17 +55,19 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Pizza Order</h1>
-      <input
-          placeholder="Name"
-          value={name}
-          onChange={e => setName(e.target.value)}
-      />
-      <div className="toppingSelections">{ToppingCheckboxes}</div>
-      <button type="submit">Submit</button>
-      <h1>Your Order</h1>
-      <h2>{name}</h2>
-      <div className="toppingOutput">{outputToppings}</div>
+        <div className="userOrder">
+        <h1>Pizza Order</h1>
+        <input
+            placeholder="Name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+        />
+        <div className="toppingSelections">{ToppingCheckboxes}</div>
+        <button type="submit">Submit</button>
+        <h1>Your Order</h1>
+        <h2>{name}</h2>
+        <div className="toppingOutput">{outputToppings}</div>
+      </div>
     </div>
   );
 }

@@ -12,14 +12,47 @@ body {
   color: #0b0b20;
   line-height: 1.75rem;
 }
-body div[class=App] {
+body .App {
   display: flex;
   flex-direction: column;
-  background-color: #c0bbbd;
-  width: 80vw;
+  background-color: #e2dfe1;
+  width: 90vw;
   height: 100vh;
-  margin: 0 0 0 10vw;
-  padding: 5em;
+  margin: 0 0 0 5vw;
+  padding: 5rem;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+body .App .userOrder {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f3f3;
+  border: 0.1rem solid #bebebe;
+  padding: inherit;
+}
+body .App .userOrder > * {
+  margin: 0.75rem;
+}
+body .App .userOrder > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 0.5rem solid blue;
+}
+body .App .userOrder > input, body .App .userOrder button {
+  width: 15%;
+  padding: 0.75rem 2rem;
+  margin: 0 1rem;
+}
+body .App .userOrder .toppingSelections {
+  padding: 1rem;
+}
+body .App .userOrder .toppingSelections > label {
+  margin: 1.5rem;
+}
+body .App .userOrder .toppingSelections > label > input {
+  margin: 0 0.25rem;
 }
 
 /*# sourceMappingURL=App.css.map */
