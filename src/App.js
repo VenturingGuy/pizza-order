@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from "react";
 
 
-const PIZZA_TOPPINGS = ['Pepperoni', 'Sausage', 'Peppers', 'Onions', 'Bell Pepper']
+const PIZZA_TOPPINGS = ['Pepperoni', 'Sausage', 'Peppers', 'Onions', 'Pineapple']
 
 function App() {
   const [name, setName] = useState('')
@@ -61,7 +61,7 @@ function App() {
           value={name}
           onChange={e => setName(e.target.value)}
       />
-      <div classname="toppingSelections">{ToppingCheckboxes}</div>
+      <div className="toppingSelections">{ToppingCheckboxes}</div>
       <button type="submit">Submit</button>
       <h1>Your Order</h1>
       <h2>{name}</h2>
