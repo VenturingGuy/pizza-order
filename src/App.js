@@ -2,11 +2,11 @@ import './App.css';
 import { useState } from "react";
 
 
-const PIZZA_TOPPINGS = ['Pepperoni', 'Sausage', 'Peppers', 'Onions']
+const PIZZA_TOPPINGS = ['Pepperoni', 'Sausage', 'Peppers', 'Onions', 'Bell Pepper']
 
 function App() {
   const [name, setName] = useState('')
-  const [toppings, setToppings] = useState([false, false, false, false]);
+  const [toppings, setToppings] = useState(PIZZA_TOPPINGS.map(() => false))
   // Define list of toppings
   // Make function to output individual inputs
     // checkmark input type, name, checked or not?
