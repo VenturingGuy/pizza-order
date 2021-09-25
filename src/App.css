@@ -17,7 +17,7 @@ body .App {
   flex-direction: column;
   background-color: #e2dfe1;
   width: 90vw;
-  height: 100vh;
+  height: 100%;
   margin: 0 0 0 5vw;
   padding: 5rem;
   border-left: 5px solid black;
